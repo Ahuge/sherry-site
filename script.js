@@ -1,28 +1,49 @@
-// No Patient Left Behind - Static Website JavaScript
-// Basic interactive functionality for enhanced user experience
+document.addEventListener('DOMContentLoaded', function () {
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scroll behavior for internal links
-    document.querySelectorAll('a[href^="#"').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
+  // ─── Mobile Nav Toggle ───
+  var toggle = document.getElementById('navToggle');
+  var navList = document.getElementById('navList');
+
+  if (toggle && navList) {
+    toggle.addEventListener('click', function () {
+      navList.classList.toggle('open');
+      var expanded = navList.classList.contains('open');
+      toggle.setAttribute('aria-expanded', expanded);
     });
 
-    // Mobile navigation toggle (for future responsive improvements)
-    const navToggle = document.querySelector('.nav-toggle');
-    const navList = document.querySelector('.nav-list');
+    document.addEventListener('click', function (e) {
+      if (!toggle.contains(e.target) && !navList.contains(e.target)) {
+        navList.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
 
-    if (navToggle && navList) {
-        navToggle.addEventListener('click', function() {
-            navList.classList.toggle('active');
-        });
+  // ─── Active nav link highlight ───
+  var currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  var links = document.querySelectorAll('.nav-link');
+  for (var i = 0; i < links.length; i++) {
+    var href = links[i].getAttribute('href');
+    if (href === currentPath) {
+      links[i].classList.add('active');
+    } else {
+      links[i].classList.remove('active');
     }
+  }
+
+  // ─── Smooth scroll for anchor links ───
+  var anchorLinks = document.querySelectorAll('a[href^="#"]');
+  for (var j = 0; j < anchorLinks.length; j++) {
+    anchorLinks[j].addEventListener('click', function (e) {
+      var targetId = this.getAttribute('href');
+      if (targetId && targetId !== '#') {
+        var target = document.querySelector(targetId);
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  }
+
 });

@@ -1,82 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>No Patient Left Behind - Legacy Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="No Patient Left Behind — institutionalising healthcare accountability frameworks, resource sharing, and scalable improvement strategies. Honouring the legacy of Grant Innes.">
+  <title>No Patient Left Behind — Legacy Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <h1>No Patient Left Behind</h1>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-mark">N</span>
+          <div>
+            <span class="logo-text">No Patient Left Behind</span>
+            <span class="logo-sub">Healthcare Accountability Foundation</span>
+          </div>
+        </a>
+      </div>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="accountability.html" class="nav-link">Accountability Frameworks</a></li>
+          <li><a href="resources.html" class="nav-link">Improvement Resources</a></li>
+          <li><a href="awards.html" class="nav-link">Awards &amp; Applications</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── Hero ─── -->
+    <section class="hero">
+      <div class="container">
+        <span class="hero-tag">A Grant Innes Legacy Initiative</span>
+        <h2>Building a More Accountable Healthcare System</h2>
+        <p>Institutionalising improvement strategies, sharing resources, and scaling what works — so no patient is ever left behind.</p>
+        <div class="hero-actions">
+          <a href="accountability.html" class="btn btn-primary btn-lg">Explore Our Frameworks</a>
+          <a href="#support" class="btn btn-outline btn-lg">Support the Mission</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Mission / Vision / ToR ─── -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Core Purpose</h2>
+          <p>The mission, vision, and terms of reference that guide every initiative we undertake.</p>
+        </div>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-icon blue">🎯</div>
+            <h3>Mission</h3>
+            <p>To create a more accountable, transparent, and effective healthcare system by equipping leaders with proven improvement strategies and fostering a culture of shared learning.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon blue">🔭</div>
+            <h3>Vision</h3>
+            <p>A world where every patient receives timely, high-quality care — and systemic failures are systematically identified, studied, and eliminated.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon blue">📋</div>
+            <h3>Terms of Reference</h3>
+            <p>We operate as a non-partisan collective of healthcare professionals, researchers, and policymakers committed to open-source dissemination of accountability frameworks and capacity-building tools.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── Grant Innes Tribute ─── -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>The Grant Innes Tribute</h2>
+          <p>A legacy of vision, compassion, and relentless pursuit of better care for every patient.</p>
+        </div>
+        <div class="tribute">
+          <div class="tribute-inner">
+            <div class="tribute-content">
+              <h2>Honouring a Visionary</h2>
+              <p>Grant Innes dedicated his career to proving that healthcare systems can — and must — be held to a higher standard. His work laid the foundation for the accountability frameworks, capacity strategies, and improvement resources this site exists to preserve and scale.</p>
+              <p>His vision was simple but profound: <strong>no patient should ever be left behind</strong> because of a failure in the system designed to help them.</p>
+              <a href="resources.html" class="btn btn-outline btn-lg">Explore the Resources</a>
             </div>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="accountability.html" class="nav-link">Accountability Frameworks</a></li>
-                    <li><a href="resources.html" class="nav-link">Improvement Resources</a></li>
-                    <li><a href="awards.html" class="nav-link">Awards & Applications</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <section class="hero">
-                <h2>Building a More Accountable Healthcare System</h2>
-                <p>Institutionalizing improvement strategies for better patient outcomes</p>
-            </section>
-
-            <section class="content">
-                <h2>About NPLB</h2>
-                <p>No Patient Left Behind is dedicated to institutionalizing healthcare accountability frameworks, improving resource sharing, and scaling improvement strategies.</p>
-
-                <div class="grid">
-                    <div class="card">
-                        <h3>Our Mission</h3>
-                        <p>To create a more accountable, transparent, and effective healthcare system through innovative improvement strategies and resource sharing.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Our Vision</h3>
-                        <p>A healthcare system where every patient receives the highest quality care, and no one is left behind due to systemic failures.</p>
-                    </div>
+            <div class="tribute-visual">
+              <div>
+                <div class="tribute-quote">
+                  "The measure of a healthcare system is not how it treats the healthy, but how it fights for the one who is falling through the cracks."
                 </div>
-            </section>
-
-            <section class="legacy-story">
-                <h2>Grant Innes Tribute</h2>
-                <div class="story-content">
-                    <p>Grant Innes's legacy lives on through our commitment to his vision for healthcare improvement.</p>
-                </div>
-            </section>
-
-            <section class="leadership">
-                <h2>Leadership Team</h2>
-                <p>Our Board of Directors works tirelessly to advance the NPLB mission and vision.</p>
-            </section>
-
-            <section class="support">
-                <h2>Support Our Work</h2>
-                <p>Your support helps us continue building a better healthcare system for everyone.</p>
-                <button class="donate-btn" onclick="window.open('https://example.com/donate', '_blank')">Donate Now</button>
-                <div class="qr-code">
-                    <img src="https://via.placeholder.com/150x150.png?text=QR+Code" alt="Donation QR Code">
-                    <p>Scan to Donate</p>
-                </div>
-            </section>
+                <div class="tribute-attribution">— Grant Innes</div>
+              </div>
+            </div>
+          </div>
         </div>
-    </main>
+      </div>
+    </section>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 No Patient Left Behind. All rights reserved.</p>
+    <!-- ─── Leadership ─── -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Leadership Hub</h2>
+          <p>Meet the board members, clinicians, and researchers steering the NPLB mission forward.</p>
         </div>
-    </footer>
+        <div class="leadership-grid">
+          <div class="leader-card">
+            <div class="leader-avatar">DR</div>
+            <h4>Dr. Amara Osei</h4>
+            <div class="role">Chair, Board of Directors</div>
+            <p>Emergency medicine physician and health systems researcher with 20+ years of experience in quality improvement.</p>
+          </div>
+          <div class="leader-card">
+            <div class="leader-avatar">JM</div>
+            <h4>James MacAllister</h4>
+            <div class="role">Vice-Chair &amp; Strategy Lead</div>
+            <p>Former hospital CEO who led one of the largest system-wide accountability transformations in the UK.</p>
+          </div>
+          <div class="leader-card">
+            <div class="leader-avatar">LC</div>
+            <h4>Prof. Li Chen</h4>
+            <div class="role">Research Director</div>
+            <p>Academic lead on capacity-management and reverse-triage methodologies at the University of Toronto.</p>
+          </div>
+          <div class="leader-card">
+            <div class="leader-avatar">SN</div>
+            <h4>Sarah Ndlovu</h4>
+            <div class="role">Community &amp; Patient Advocate</div>
+            <p>Patient-safety advocate ensuring every framework reflects the voices of those the system exists to serve.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- ─── Support CTA ─── -->
+    <section class="section" id="support">
+      <div class="container">
+        <div class="support-section">
+          <h2>Support Our Work</h2>
+          <p>Your contribution helps us continue developing and disseminating accountability frameworks to healthcare organisations worldwide.</p>
+          <div class="support-actions">
+            <a href="https://example.com/donate" target="_blank" rel="noopener" class="btn btn-accent btn-lg">Donate Now</a>
+            <a href="#" class="btn btn-outline btn-lg" onclick="window.print()">Print QR Code</a>
+          </div>
+          <div class="qr-area">
+            <div class="qr-placeholder">
+              QR Code<br><small>(link to external donation portal)</small>
+            </div>
+            <span>Scan to donate via our secure foundation partner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── Footer ─── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>No Patient Left Behind</h3>
+          <p>A Grant Innes Legacy Initiative. We exist to institutionalise healthcare accountability, share improvement resources, and scale proven strategies — so that no patient is ever left behind.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="accountability.html">Accountability Frameworks</a></li>
+            <li><a href="resources.html">Improvement Resources</a></li>
+            <li><a href="awards.html">Awards &amp; Applications</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:contact@nopatientleftbehind.org">Email Us</a></li>
+            <li><a href="https://example.com/donate" target="_blank" rel="noopener">Donate</a></li>
+            <li><a href="awards.html">Apply for an Award</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2024 No Patient Left Behind. All rights reserved.</span>
+        <span>Built with care — static, secure, zero-maintenance.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

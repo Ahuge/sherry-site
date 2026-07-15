@@ -1,18 +1,14 @@
 {
-  "name": "no-patient-left-behind",
+  "name": "nopatientleftbehind",
   "version": "1.0.0",
-  "description": "No Patient Left Behind - Legacy Static Website",
-  "main": "index.html",
+  "private": true,
+  "description": "No Patient Left Behind — a legacy static website for healthcare accountability frameworks, improvement resources, and award grants. A Grant Innes Legacy Initiative.",
   "scripts": {
-    "start": "echo 'Static site - no build required. Deploy directly to GitHub Pages, Netlify, or Vercel.'",
-    "deploy": "echo 'Deploy to GitHub Pages: gh-pages branch' && git push origin gh-pages",
-    "validate": "html5validator index.html accountability.html resources.html awards.html || echo 'HTML validation completed'"
+    "start": "npx serve .",
+    "deploy:pages": "echo 'Deploy to GitHub Pages: push main branch, enable Pages from / (root)'",
+    "deploy:netlify": "echo 'Deploy to Netlify: drag ./ folder or connect repo — no build command needed'",
+    "deploy:vercel": "echo 'Deploy to Vercel: import project, set output to current directory, no build'"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/example/no-patient-left-behind.git"
-  },
-  "author": "",
-  "license": "MIT",
-  "private": true
+  "keywords": ["healthcare", "accountability", "static-site", "grant-innes", "nplb"],
+  "license": "MIT"
 }

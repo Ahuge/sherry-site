@@ -1,101 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Improvement Resources & Strategies - No Patient Left Behind</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Improvement Resources & Strategies — operational focus areas, curated catalog of reference links, downloadable tools, and multimedia resources from No Patient Left Behind.">
+  <title>Improvement Resources &amp; Strategies — No Patient Left Behind</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <h1>No Patient Left Behind</h1>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-mark">N</span>
+          <div>
+            <span class="logo-text">No Patient Left Behind</span>
+            <span class="logo-sub">Healthcare Accountability Foundation</span>
+          </div>
+        </a>
+      </div>
+      <nav>
+        <button class="nav-toggle" aria-label="Toggle navigation" id="navToggle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+        <ul class="nav-list" id="navList">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="accountability.html" class="nav-link">Accountability Frameworks</a></li>
+          <li><a href="resources.html" class="nav-link active">Improvement Resources</a></li>
+          <li><a href="awards.html" class="nav-link">Awards &amp; Applications</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── Page Hero ─── -->
+    <section class="page-hero">
+      <div class="container">
+        <h2>Improvement Resources &amp; Strategies</h2>
+        <p>A curated collection of proven improvement methodologies, operational frameworks, and practical tools to support healthcare transformation at every level.</p>
+      </div>
+    </section>
+
+    <!-- ─── Operational Focus Areas ─── -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Operational Focus Areas</h2>
+          <p>Three interdependent domains where targeted intervention drives the greatest improvement in patient outcomes and system efficiency.</p>
+        </div>
+        <div class="card-grid">
+          <div class="card card-large">
+            <div>
+              <div class="card-icon blue">🏥</div>
+              <h3>System Care</h3>
+              <p>Strategies for maintaining and improving overall healthcare system functionality. Covers reliability engineering, safety culture, continuous monitoring infrastructure, and learning health-system design. Emphasises proactive maintenance over reactive firefighting.</p>
             </div>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="accountability.html" class="nav-link">Accountability Frameworks</a></li>
-                    <li><a href="resources.html" class="nav-link">Improvement Resources</a></li>
-                    <li><a href="awards.html" class="nav-link">Awards & Applications</a></li>
-                </ul>
-            </nav>
+            <div>
+              <div class="card-icon warm">📊</div>
+              <h3>Demand &amp; Capacity</h3>
+              <p>Balancing healthcare demand with available resources through predictive analytics, flexible workforce planning, and dynamic bed-management. Includes seasonal surge modelling, workforce elasticity frameworks, and cross-system load-balancing protocols.</p>
+            </div>
+          </div>
+          <div class="card card-large">
+            <div>
+              <div class="card-icon gold">🔄</div>
+              <h3>Intake / Reverse Triage</h3>
+              <p>Optimising patient flow from the point of entry through intelligent intake processes and reverse-triage protocols. Enables rapid identification of patients who can be safely managed in lower-acuity settings, freeing critical resources for those who need them most.</p>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:center;padding:24px">
+              <a href="#" class="btn btn-outline btn-lg">Download Focus Area Brief (PDF)</a>
+            </div>
+          </div>
         </div>
-    </header>
+      </div>
+    </section>
 
-    <main>
-        <div class="container">
-            <section class="hero">
-                <h2>Improvement Resources & Strategies</h2>
-                <p>Curated collection of proven improvement methodologies and tools for healthcare transformation</p>
-            </section>
-
-            <section class="operational-focus">
-                <h2>Operational Focus Areas</h2>
-                
-                <div class="focus-area">
-                    <h3>System Care</h3>
-                    <p>Strategies for maintaining and improving healthcare system functionality, with emphasis on reliability and continuous monitoring.</p>
-                    
-                    <h3>Demand & Capacity</h3>
-                    <p>Balancing healthcare demand with available resources through predictive analytics and flexible workforce planning.</p>
-                    
-                    <h3>Intake/Reverse Triage</h3>
-                    <p>Optimizing patient flow through intelligent intake processes and reverse triage protocols for better resource allocation.</p>
-                </div>
-            </section>
-
-            <section class="curated-catalog">
-                <h2>Curated Catalog of Resources</h2>
-                
-                <div class="resource-category">
-                    <h3>Reference Links</h3>
-                    <ul>
-                        <li><a href="#" target="_blank">Healthcare Improvement Framework Guidelines</a></li>
-                        <li><a href="#" target="_blank">Patient Safety Organization Resources</a></li>
-                        <li><a href="#" target="_blank">Quality Improvement Best Practices</a></li>
-                        <li><a href="#" target="_blank">Health System Transformation Case Studies</a></li>
-                    </ul>
-                </div>
-
-                <div class="resource-category">
-                    <h3>Downloadable Resources</h3>
-                    <ul>
-                        <li><a href="#" class="download-link">📄 System Improvement Toolkit (PDF)</a></li>
-                        <li><a href="#" class="download-link">📄 Quality Metrics Template (Excel)</a></li>
-                        <li><a href="#" class="download-link">📄 Process Mapping Guide (PDF)</a></li>
-                        <li><a href="#" class="download-link">📄 Risk Assessment Framework (PDF)</a></li>
-                    </ul>
-                </div>
-
-                <div class="resource-category">
-                    <h3>Multimedia Resources</h3>
-                    
-                    <div class="media-item">
-                        <h4>Educational Videos</h4>
-                        <div class="video-container">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/placeholder" frameborder="0" allowfullscreen title="YouTube video placeholder"></iframe>
-                        </div>
-                    </div>
-
-                    <div class="media-item">
-                        <h4>Podcasts</h4>
-                        <div class="audio-container">
-                            <iframe width="100%" height="100" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/placeholder&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true" title="SoundCloud audio player placeholder"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    <!-- ─── Curated Catalog ─── -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Curated Catalog</h2>
+          <p>Reference links, downloadable tools, and embedded multimedia — all hand-picked to support frontline improvement work.</p>
         </div>
-    </main>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 No Patient Left Behind. All rights reserved.</p>
+        <div class="catalog-grid">
+          <!-- Reference Links -->
+          <div class="catalog-category">
+            <h3>Reference Links</h3>
+            <div class="download-list">
+              <a href="#" target="_blank" rel="noopener" class="download-item">
+                <span class="download-icon link">🔗</span>
+                <div class="download-info">
+                  <span class="name">Healthcare Improvement Framework Guidelines</span>
+                  <span class="meta">WHO · Published 2023</span>
+                </div>
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="download-item">
+                <span class="download-icon link">🔗</span>
+                <div class="download-info">
+                  <span class="name">Patient Safety Organisation Resource Hub</span>
+                  <span class="meta">PSO · Updated quarterly</span>
+                </div>
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="download-item">
+                <span class="download-icon link">🔗</span>
+                <div class="download-info">
+                  <span class="name">Quality Improvement Best Practices Compendium</span>
+                  <span class="meta">IHI · 2024 Edition</span>
+                </div>
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="download-item">
+                <span class="download-icon link">🔗</span>
+                <div class="download-info">
+                  <span class="name">Health System Transformation Case Studies</span>
+                  <span class="meta">OECD · 15 case studies</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Downloadable Resources -->
+          <div class="catalog-category">
+            <h3>Downloadable Resources</h3>
+            <div class="download-list">
+              <a href="#" class="download-item">
+                <span class="download-icon pdf">📄</span>
+                <div class="download-info">
+                  <span class="name">System Improvement Toolkit</span>
+                  <span class="meta">PDF · 48 pages · 2.4 MB</span>
+                </div>
+              </a>
+              <a href="#" class="download-item">
+                <span class="download-icon xls">📊</span>
+                <div class="download-info">
+                  <span class="name">Quality Metrics Template</span>
+                  <span class="meta">Excel · 12 sheets · 180 KB</span>
+                </div>
+              </a>
+              <a href="#" class="download-item">
+                <span class="download-icon pdf">📄</span>
+                <div class="download-info">
+                  <span class="name">Process Mapping Guide</span>
+                  <span class="meta">PDF · 32 pages · 1.8 MB</span>
+                </div>
+              </a>
+              <a href="#" class="download-item">
+                <span class="download-icon doc">📋</span>
+                <div class="download-info">
+                  <span class="name">Risk Assessment Framework</span>
+                  <span class="meta">PDF · 24 pages · 1.2 MB</span>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <!-- Multimedia -->
+        <div style="margin-top:48px">
+          <h3 style="font-size:1.1rem;font-weight:600;color:var(--primary);margin-bottom:20px">Multimedia Resources</h3>
+          <div class="media-grid">
+            <div class="media-card">
+              <div class="media-card-header">🎬 Educational Videos</div>
+              <div class="media-card-body">
+                <div class="video-wrapper">
+                  <iframe src="https://www.youtube.com/embed/placeholder" title="Healthcare improvement video" allowfullscreen loading="lazy"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="media-card">
+              <div class="media-card-header">🎧 Podcasts &amp; Audio</div>
+              <div class="media-card-body">
+                <div class="audio-wrapper">
+                  <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/placeholder&color=%231a6bb3&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false" title="Healthcare improvement podcast" loading="lazy"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>No Patient Left Behind</h3>
+          <p>A Grant Innes Legacy Initiative. We exist to institutionalise healthcare accountability, share improvement resources, and scale proven strategies — so that no patient is ever left behind.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Site</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="accountability.html">Accountability Frameworks</a></li>
+            <li><a href="resources.html">Improvement Resources</a></li>
+            <li><a href="awards.html">Awards &amp; Applications</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:contact@nopatientleftbehind.org">Email Us</a></li>
+            <li><a href="https://example.com/donate" target="_blank" rel="noopener">Donate</a></li>
+            <li><a href="awards.html">Apply for an Award</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2024 No Patient Left Behind. All rights reserved.</span>
+        <span>Built with care — static, secure, zero-maintenance.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
