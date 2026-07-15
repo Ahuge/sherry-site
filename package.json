@@ -1,0 +1,18 @@
+{
+  "name": "no-patient-left-behind",
+  "version": "1.0.0",
+  "description": "No Patient Left Behind - Legacy Static Website",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'Static site - no build required. Deploy directly to GitHub Pages, Netlify, or Vercel.'",
+    "deploy": "echo 'Deploy to GitHub Pages: gh-pages branch' && git push origin gh-pages",
+    "validate": "html5validator index.html accountability.html resources.html awards.html || echo 'HTML validation completed'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/example/no-patient-left-behind.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "private": true
+}

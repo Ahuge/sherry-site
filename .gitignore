@@ -1,0 +1,61 @@
+# Node.js
+node_modules/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build directories
+dist/
+build/
+.cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and databases
+logs/
+*.log
+
+# Temporary files
+tmp/
+*.tmp
+*.temp
+
+# Distribution/ZIP
+*.zip
+*.tar.gz
+*.rar
+
+# Package files
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Test coverage reports
+coverage/
+
+# Dependency directories (for languages like Python, Java)
+vendor/
+
+# Miscellaneous
+*.bak
+*.old
+*.orig
+*.rej
+
+# Static site specific (avoid HTML validation errors from real environments)
+.netlify
+.vercel
+.dist
+*deployment*
