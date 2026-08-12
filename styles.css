@@ -279,12 +279,12 @@ body {
 
 /* --- Sections --- */
 .section {
-  padding: 64px 0;
+  padding: var(--space-8) 0;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: var(--space-7);
 }
 
 .section-header h2 {
@@ -308,13 +308,13 @@ body {
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
+  gap: var(--space-5);
 }
 
 .card {
   background: var(--bg-card);
   border-radius: var(--radius);
-  padding: 32px;
+  padding: var(--space-6);
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
   transition: all 0.25s;
@@ -350,7 +350,7 @@ body {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: var(--space-5);
   align-items: center;
 }
 
@@ -428,14 +428,14 @@ body {
 .leadership-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
+  gap: var(--space-5);
 }
 
 .leader-card {
   text-align: center;
   background: var(--bg-card);
   border-radius: var(--radius);
-  padding: 32px 24px;
+  padding: var(--space-6) var(--space-5);
   border: 1px solid var(--border);
   transition: all 0.25s;
 }
@@ -472,7 +472,7 @@ body {
 .action-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: var(--space-5);
   max-width: 800px;
   margin: 0 auto;
 }
@@ -615,7 +615,7 @@ body {
 .figure-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: var(--space-5);
   margin-top: 32px;
 }
 
@@ -784,7 +784,7 @@ body {
 .media-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: var(--space-5);
 }
 
 .media-card {
@@ -824,7 +824,7 @@ body {
 }
 
 .audio-wrapper {
-  padding: 16px 20px;
+  padding: var(--space-4) var(--space-5);
 }
 
 .audio-wrapper iframe { height: 140px; }
@@ -833,7 +833,7 @@ body {
 .priorities-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: var(--space-4);
 }
 
 .priority-item {
@@ -936,7 +936,7 @@ body {
   .media-grid { grid-template-columns: 1fr; }
   .priorities-list { grid-template-columns: 1fr; }
 
-  .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+  .footer-grid { grid-template-columns: 1fr; gap: var(--space-5); }
 
   .section { padding: 40px 0; }
 
