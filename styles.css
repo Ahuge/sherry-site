@@ -136,7 +136,21 @@ body {
 
 .nav-toggle svg { width: 24px; height: 24px; }
 
-.nav-donate { margin-top: 8px; align-self: flex-start; margin-left: 0; }
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-donate-btn {
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-weight: 600;
+}
 
 /* --- Buttons --- */
 .btn {
