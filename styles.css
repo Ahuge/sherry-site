@@ -559,40 +559,6 @@ body {
   font-style: italic;
 }
 
-/* --- Email Signup --- */
-.email-signup {
-  display: flex;
-  gap: 8px;
-  max-width: 420px;
-  margin: 24px auto 0;
-  justify-content: center;
-}
-
-.email-signup input {
-  flex: 1;
-  padding: 10px 16px;
-  border: 1px solid rgba(255,255,255,0.3);
-  border-radius: var(--radius-sm);
-  background: rgba(255,255,255,0.1);
-  color: #fff;
-  font-size: 0.9rem;
-  font-family: var(--font);
-}
-
-.email-signup input::placeholder { color: rgba(255,255,255,0.5); }
-
-.email-signup button {
-  padding: 10px 20px;
-  background: var(--warm);
-  color: var(--primary);
-  border: none;
-  border-radius: var(--radius-sm);
-  font-weight: 600;
-  font-size: 0.85rem;
-  cursor: pointer;
-  white-space: nowrap;
-}
-
 /* --- Donation / Support --- */
 .support-section {
   background: var(--primary);
@@ -966,7 +932,6 @@ body {
 
   .action-grid { grid-template-columns: 1fr; }
   .tier-grid { grid-template-columns: 1fr; }
-  .email-signup { flex-direction: column; }
   .catalog-grid { grid-template-columns: 1fr; }
   .media-grid { grid-template-columns: 1fr; }
   .priorities-list { grid-template-columns: 1fr; }
