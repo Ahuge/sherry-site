@@ -684,6 +684,10 @@ body {
   max-width: 600px;
 }
 
+.breadcrumb { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px; }
+.breadcrumb a { color: var(--primary-light); text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+
 /* --- Long-form / Typeset Content --- */
 .typeset {
   max-width: 720px;
