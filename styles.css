@@ -429,10 +429,13 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: var(--space-5);
+  align-items: stretch;
 }
 
 .leader-card {
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
   background: var(--bg-card);
   border-radius: var(--radius);
   padding: var(--space-6) var(--space-5);
@@ -442,12 +445,14 @@ body {
 
 .leader-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
 
+.leader-card p { flex: 1; }
+
 .leader-avatar {
   width: 80px;
   height: 80px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--primary-light), var(--primary));
-  margin: 0 auto 16px;
+  margin: 0 0 16px;
   display: flex;
   align-items: center;
   justify-content: center;
