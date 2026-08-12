@@ -17,6 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
         toggle.setAttribute('aria-expanded', 'false');
       }
     });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && navList.classList.contains('open')) {
+        navList.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
   }
 
   // ─── Active nav link highlight ───
