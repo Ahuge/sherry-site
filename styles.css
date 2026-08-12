@@ -54,6 +54,8 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  min-width: 0;
+  flex-shrink: 1;
 }
 
 .logo-mark {
@@ -960,10 +962,12 @@ body {
 }
 
 @media (max-width: 480px) {
+  .logo-sub { display: none; }
+  .nav-donate-btn { padding: 6px 12px; font-size: 0.8rem; }
+  .logo-text { font-size: 0.95rem; white-space: normal; }
   .hero h2 { font-size: 1.6rem; }
   .hero { padding: 48px 0 40px; }
   .header-inner { height: 64px; }
   .nav-list { top: 64px; }
-  .logo-text { font-size: 1rem; }
   .section-header h2 { font-size: 1.5rem; }
 }
