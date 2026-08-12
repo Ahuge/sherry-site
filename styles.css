@@ -498,6 +498,16 @@ body {
 
 .action-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
 
+.action-card-body svg {
+  width: 28px;
+  height: 28px;
+  color: var(--primary-light);
+  margin-bottom: 12px;
+  display: block;
+}
+
+.action-card-accent .action-card-body svg { color: var(--warm); }
+
 .action-card-body h3 {
   font-size: 1rem;
   font-weight: 600;
