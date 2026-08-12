@@ -723,6 +723,19 @@ body {
   flex-shrink: 0;
 }
 
+.coming-soon {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--primary-light);
+  background: rgba(26,107,179,0.08);
+  border: 1px solid rgba(26,107,179,0.2);
+  border-radius: 100px;
+  padding: 4px 12px;
+  margin-top: 12px;
+}
+
 /* --- Download / Catalog --- */
 .download-list {
   display: grid;
