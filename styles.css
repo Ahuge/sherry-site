@@ -444,6 +444,131 @@ body {
 .leader-card .role { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 8px; }
 .leader-card p { font-size: 0.85rem; color: var(--text-muted); line-height: 1.5; }
 
+/* --- Action Grid --- */
+.action-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.action-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: var(--shadow);
+}
+
+.action-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+
+.action-card-body h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.action-card-body p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.action-arrow {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-light);
+}
+
+.action-card-accent {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.action-card-accent .action-card-body h3 { color: #fff; }
+.action-card-accent .action-card-body p { color: rgba(255,255,255,0.8); }
+.action-card-accent .action-arrow { color: var(--warm); }
+
+/* --- Donation Tiers --- */
+.tier-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.tier-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-sm);
+  padding: 24px;
+  text-align: center;
+}
+
+.tier-card h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.tier-card p {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.tax-receipt-note {
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+  margin-top: 8px;
+  font-style: italic;
+}
+
+/* --- Email Signup --- */
+.email-signup {
+  display: flex;
+  gap: 8px;
+  max-width: 420px;
+  margin: 24px auto 0;
+  justify-content: center;
+}
+
+.email-signup input {
+  flex: 1;
+  padding: 10px 16px;
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: var(--font);
+}
+
+.email-signup input::placeholder { color: rgba(255,255,255,0.5); }
+
+.email-signup button {
+  padding: 10px 20px;
+  background: var(--warm);
+  color: var(--primary);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
 /* --- Donation / Support --- */
 .support-section {
   background: var(--primary);
@@ -815,6 +940,9 @@ body {
 
   .card-large { grid-template-columns: 1fr; }
 
+  .action-grid { grid-template-columns: 1fr; }
+  .tier-grid { grid-template-columns: 1fr; }
+  .email-signup { flex-direction: column; }
   .catalog-grid { grid-template-columns: 1fr; }
   .media-grid { grid-template-columns: 1fr; }
   .priorities-list { grid-template-columns: 1fr; }
