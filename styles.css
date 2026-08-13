@@ -126,8 +126,8 @@ body {
   flex-direction: column;
   gap: 4px;
   position: absolute;
-  top: 72px;
-  right: 24px;
+  top: 100%;
+  right: 0;
   min-width: 260px;
   background: #fff;
   padding: 16px;
@@ -172,6 +172,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  position: relative;
 }
 
 .nav-donate-btn {
@@ -828,6 +829,8 @@ body {
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
+  .nav-bar { position: static; }
+
   .nav-list {
     left: 0;
     right: 0;
