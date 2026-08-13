@@ -961,7 +961,7 @@ body {
 
 .footer-col h4 { color: #fff; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
 .footer-col ul { list-style: none; }
-.footer-col li { margin-bottom: 6px; }
+.footer-col li { margin-bottom: 2px; }
 .footer-col a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
 .footer-col a:hover { color: #fff; }
 
