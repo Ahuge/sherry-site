@@ -497,6 +497,7 @@ body {
   justify-content: space-between;
   background: var(--bg-card);
   border: 1px solid var(--border);
+  border-left: 3px solid transparent;
   border-radius: var(--radius);
   padding: 28px;
   text-decoration: none;
@@ -504,7 +505,7 @@ body {
   box-shadow: var(--shadow);
 }
 
-.action-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+.action-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); border-left-color: var(--primary-light); }
 
 .action-card-body svg {
   width: 28px;
@@ -517,7 +518,7 @@ body {
 .action-card-accent .action-card-body svg { color: var(--warm); }
 
 .action-card-body h3 {
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--primary);
   margin-bottom: 8px;
