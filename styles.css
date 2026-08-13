@@ -495,6 +495,60 @@ body {
   margin: 0;
 }
 
+.subscribe-box {
+  margin-top: 24px;
+  padding: 20px 24px;
+  background: rgba(255,255,255,0.08);
+  border-radius: var(--radius-sm);
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subscribe-box p {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.9);
+  opacity: 1;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 8px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+  font-size: 0.9rem;
+  font-family: var(--font);
+}
+
+.subscribe-form input::placeholder { color: rgba(255,255,255,0.45); }
+
+.subscribe-form button {
+  padding: 10px 20px;
+  background: var(--warm);
+  color: var(--primary);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.subscribe-note {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.45);
+}
+
 .tax-receipt-note {
   font-size: 0.85rem;
   color: rgba(255,255,255,0.7);
@@ -941,6 +995,7 @@ body {
 
   .action-grid { grid-template-columns: 1fr; }
   .tier-grid { grid-template-columns: 1fr; }
+  .subscribe-form { flex-direction: column; }
   .catalog-grid { grid-template-columns: 1fr; }
   .media-grid { grid-template-columns: 1fr; }
   .priorities-list { grid-template-columns: 1fr; }

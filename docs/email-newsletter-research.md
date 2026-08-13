@@ -20,6 +20,6 @@
 - **Google Forms** — free forever, but stores responses in a spreadsheet, not a newsletter tool. Manual export to send.
 - **ConvertKit** — free up to 1,000 subs, but aimed at creators/course sellers; overbuilt for quarterly foundation updates.
 
-**What we need from the foundation:** A Mailchimp account (or similar) and the embed code or form URL. We cannot wire this up from our side alone.
+**What we need from the foundation:** A Mailchimp account (or similar) and the form action URL. We cannot wire this up from our side alone.
 
-For now, the site uses a `mailto:` link ("Email us to subscribe") as a lightweight stopgap.
+**Current state:** A styled Mailchimp-ready form is stubbed on `index.html` with a placeholder action URL (`REPLACE-WITH-MAILCHIMP-URL`). When Grant provides the real form action, replace that string with the actual URL and the form will start collecting emails. No other code changes needed.
