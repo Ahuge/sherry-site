@@ -284,6 +284,14 @@ body {
   margin-bottom: var(--space-7);
 }
 
+.section-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: -0.5px;
+  margin-bottom: var(--space-5);
+}
+
 .section-header h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -776,6 +784,108 @@ body {
 
 .submit-card h3 { font-size: 1.3rem; color: var(--primary); margin-bottom: 8px; }
 .submit-card p { color: var(--text-muted); margin-bottom: 24px; }
+
+/* --- Media Hub --- */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: var(--radius-sm);
+}
+
+.media-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.media-card-header {
+  padding: 28px 32px 20px;
+}
+
+.media-card-header h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 6px;
+}
+
+.media-card-header p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.media-card .video-wrapper {
+  border-radius: 0;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.press-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+.press-item:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+
+.press-image {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: rgba(10,37,64,0.04);
+}
+
+.press-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.press-image-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+}
+
+.press-image-empty svg {
+  width: 48px;
+  height: 48px;
+  opacity: 0.3;
+}
+
+.press-item h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--primary);
+  padding: 16px 20px 4px;
+}
+
+.press-item .coming-soon {
+  display: inline-block;
+  margin: 0 20px 16px;
+}
+
+.press-item-placeholder h4 { color: var(--text-muted); }
 
 /* --- Footer --- */
 .footer {
