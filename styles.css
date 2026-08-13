@@ -34,7 +34,7 @@ body {
   font-family: var(--font);
   color: var(--text);
   background: var(--bg);
-  line-height: 1.7;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -228,8 +228,6 @@ body {
 
 .btn-sm { padding: 8px 18px; font-size: 0.85rem; }
 
-.nav-donate { margin-left: 8px; align-self: center; }
-
 /* --- Hero --- */
 .hero {
   padding: 64px 0 48px;
@@ -311,7 +309,7 @@ body {
   margin: 0 auto;
 }
 
-.section-alt { background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.section-alt { background: var(--bg-card); border-top: 1px solid var(--border); }
 
 /* --- Cards --- */
 .card-grid {
@@ -354,84 +352,6 @@ body {
 }
 
 .card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.6; }
-
-.card-large {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-5);
-  align-items: center;
-}
-
-/* --- Tribute Section --- */
-.tribute {
-  background: var(--primary);
-  color: #fff;
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-
-.tribute-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  min-height: 320px;
-}
-
-.tribute-content {
-  padding: 48px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.tribute-content h2 {
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin-bottom: 16px;
-  letter-spacing: -0.3px;
-}
-
-.tribute-content p { opacity: 0.85; line-height: 1.7; margin-bottom: 16px; font-size: 0.95rem; }
-.tribute-content .btn-outline { border-color: rgba(255,255,255,0.4); color: #fff; }
-.tribute-content .btn-outline:hover { background: rgba(255,255,255,0.15); border-color: #fff; }
-
-.tribute-visual {
-  background: linear-gradient(135deg, var(--primary-light), var(--primary-dark));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 48px;
-  position: relative;
-  overflow: hidden;
-}
-
-.tribute-visual::before {
-  content: '"';
-  position: absolute;
-  font-size: 12rem;
-  opacity: 0.08;
-  top: -20px;
-  left: 10px;
-  font-family: Georgia, serif;
-}
-
-.tribute-quote {
-  font-size: 1.3rem;
-  font-weight: 300;
-  font-style: italic;
-  line-height: 1.6;
-  max-width: 360px;
-  text-align: center;
-  opacity: 0.9;
-}
-
-.tribute-attribution {
-  margin-top: 12px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  font-style: normal;
-  opacity: 0.7;
-}
 
 /* --- Leadership --- */
 .leadership-grid {
@@ -706,9 +626,9 @@ body {
 
 .typeset h2 { font-size: 1.8rem; color: var(--primary); margin: 40px 0 16px; font-weight: 700; letter-spacing: -0.3px; }
 .typeset h3 { font-size: 1.2rem; color: var(--primary); margin: 28px 0 12px; font-weight: 600; }
-.typeset p { margin-bottom: 16px; color: var(--text); font-size: 0.95rem; line-height: 1.8; }
+.typeset p { margin-bottom: 16px; color: var(--text); font-size: 0.95rem; line-height: 1.65; }
 .typeset ul, .typeset ol { margin: 0 0 16px 20px; }
-.typeset li { margin-bottom: 8px; color: var(--text); font-size: 0.95rem; line-height: 1.7; }
+.typeset li { margin-bottom: 8px; color: var(--text); font-size: 0.95rem; line-height: 1.65; }
 .typeset strong { color: var(--primary); }
 
 .typeset-block {
@@ -721,37 +641,6 @@ body {
 }
 
 .typeset-block h4 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--primary); margin-bottom: 8px; }
-
-.typeset-phase {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 24px;
-  margin-bottom: 16px;
-}
-
-.typeset-phase h3 {
-  font-size: 1rem;
-  margin-top: 0;
-  margin-bottom: 8px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.typeset-phase .phase-num {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  background: var(--primary);
-  color: #fff;
-  font-size: 0.8rem;
-  font-weight: 600;
-  flex-shrink: 0;
-}
 
 .coming-soon {
   display: inline-block;
@@ -822,55 +711,6 @@ body {
   padding-bottom: 8px;
   border-bottom: 2px solid var(--border);
 }
-
-/* --- Media Embed --- */
-.media-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-5);
-}
-
-.media-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-
-.media-card-header {
-  padding: 16px 20px;
-  border-bottom: 1px solid var(--border);
-  font-weight: 600;
-  color: var(--primary);
-  font-size: 0.9rem;
-}
-
-.media-card-body {
-  position: relative;
-  width: 100%;
-}
-
-.media-card-body iframe { display: block; width: 100%; }
-
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.audio-wrapper {
-  padding: var(--space-4) var(--space-5);
-}
-
-.audio-wrapper iframe { height: 140px; }
 
 /* --- Awards Page Specific --- */
 .priorities-list {
@@ -964,10 +804,6 @@ body {
 
   .hero h2 { font-size: 2rem; }
   .hero p { font-size: 1rem; }
-
-  .tribute-inner { grid-template-columns: 1fr; }
-  .tribute-content { padding: 32px; }
-  .tribute-visual { padding: 32px; }
 
   .card-large { grid-template-columns: 1fr; }
 
