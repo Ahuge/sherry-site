@@ -281,6 +281,15 @@ body {
   line-height: 1.6;
 }
 
+.hero-founder {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
 .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 4px; }
 .hero-actions .btn-lg { padding: 14px 28px; font-size: 1rem; }
 
@@ -642,6 +651,36 @@ body {
 
 .typeset-block h4 { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--primary); margin-bottom: 8px; }
 
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-4);
+  margin: var(--space-6) 0;
+}
+
+.stat-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-5);
+  text-align: center;
+}
+
+.stat-box .stat-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.2;
+  margin-bottom: 4px;
+}
+
+.stat-box .stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
 .coming-soon {
   display: inline-block;
   font-size: 0.75rem;
@@ -829,6 +868,8 @@ body {
   .logo-sub { display: none; }
   .nav-donate-btn { padding: 6px 12px; font-size: 0.8rem; }
   .logo-text { font-size: 0.95rem; white-space: normal; }
+  .hero-tag { font-size: 0.75rem; padding: 5px 12px; }
+  .hero-founder { flex-direction: column; gap: 8px; }
   .hero h2 { font-size: 1.6rem; }
   .hero { padding: 48px 0 40px; }
   .header-inner { height: 64px; }
