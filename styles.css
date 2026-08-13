@@ -251,18 +251,7 @@ body {
 
 .hero > * { position: relative; z-index: 1; }
 
-.hero-tag {
-  display: inline-block;
-  background: rgba(10,37,64,0.08);
-  color: var(--primary);
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  padding: 6px 16px;
-  border-radius: 100px;
-  margin-bottom: 20px;
-}
+.hero > * { position: relative; z-index: 1; }
 
 .hero h2 {
   font-size: 2.4rem;
@@ -280,15 +269,6 @@ body {
   max-width: 600px;
   margin: 0 auto 32px;
   line-height: 1.6;
-}
-
-.hero-founder {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
-  font-size: 0.85rem;
-  color: var(--text-muted);
 }
 
 .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 4px; }
@@ -871,8 +851,6 @@ body {
   .logo-sub { display: none; }
   .nav-donate-btn { padding: 6px 12px; font-size: 0.8rem; }
   .logo-text { font-size: 0.95rem; white-space: normal; }
-  .hero-tag { font-size: 0.75rem; padding: 5px 12px; }
-  .hero-founder { flex-direction: column; gap: 8px; }
   .hero h2 { font-size: 1.6rem; }
   .hero { padding: 48px 0 40px; }
   .header-inner { height: 64px; }
