@@ -73,51 +73,59 @@ body {
 }
 
 .header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 72px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
-.logo a {
-  text-decoration: none;
+.header-masthead {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+}
+
+.header-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--border);
+}
+
+.header-titles {
+  flex: 1;
   min-width: 0;
-  flex-shrink: 1;
 }
 
-.logo-mark {
-  width: 36px;
-  height: 36px;
-  background: var(--primary);
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.85rem;
-  letter-spacing: 0.5px;
-}
-
-.logo-text {
-  font-size: 1.2rem;
+.header-titles h1 {
+  font-size: 1.4rem;
   font-weight: 700;
   color: var(--primary);
   letter-spacing: -0.3px;
-  white-space: nowrap;
+  line-height: 1.2;
+  margin: 0;
 }
 
-.logo-sub {
-  font-size: 0.75rem;
+.header-titles .header-sub {
+  font-size: 0.85rem;
   color: var(--text-muted);
   font-weight: 400;
-  display: block;
-  margin-top: -1px;
-  white-space: nowrap;
-  letter-spacing: 0.1px;
+  line-height: 1.3;
+}
+
+.header-titles .header-tagline {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-top: 2px;
+  line-height: 1.3;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
 .nav-list {
@@ -168,7 +176,7 @@ body {
 
 .nav-toggle svg { width: 24px; height: 24px; }
 
-.nav-bar {
+.header-nav {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -228,6 +236,118 @@ body {
 .btn-lg { padding: 16px 36px; font-size: 1.05rem; }
 
 .btn-sm { padding: 8px 18px; font-size: 0.85rem; }
+
+/* --- Home Layout --- */
+.home-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.home-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.home-summary {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-6);
+}
+
+.home-summary p { color: var(--text); font-size: 0.95rem; line-height: 1.65; }
+
+.home-personas {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.persona-card {
+  flex: 1;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-5);
+  text-decoration: none;
+  transition: all 0.2s;
+  box-shadow: var(--shadow);
+}
+
+.persona-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+
+.persona-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 4px;
+}
+
+.persona-card p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.home-right {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.home-nav-btn {
+  display: block;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s;
+  box-shadow: var(--shadow);
+}
+
+.home-nav-btn:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+
+.home-nav-btn .sub {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.home-nav-donate {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.home-nav-donate:hover { background: var(--primary-light); }
+
+.home-nav-donate .sub { color: rgba(255,255,255,0.7); }
+
+.home-graphic {
+  flex: 1;
+  border: 2px dashed var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+  color: var(--text-muted);
+  font-weight: 600;
+}
 
 /* --- Hero --- */
 .hero {
@@ -956,6 +1076,32 @@ body {
   margin-bottom: 32px;
 }
 
+.footer-pills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-pill {
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 100px;
+  padding: 6px 18px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.8);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+a.footer-pill:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5); color: #fff; }
+
 .footer-brand h3 { color: #fff; font-size: 1rem; margin-bottom: 8px; }
 .footer-brand p { font-size: 0.9rem; line-height: 1.6; max-width: 320px; }
 
@@ -973,12 +1119,17 @@ body {
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
-  .nav-bar { position: static; }
+  .header-nav { position: static; }
+
+  .header-masthead { gap: 12px; }
+  .header-photo { width: 64px; height: 64px; }
+  .header-titles h1 { font-size: 1.2rem; }
+  .header-titles .header-tagline { display: none; }
 
   .nav-list {
     left: 0;
     right: 0;
-    top: 72px;
+    top: 100%;
     min-width: 0;
     border-radius: 0;
     border-left: none;
@@ -987,6 +1138,9 @@ body {
   }
 
   .nav-link { font-size: 1rem; }
+
+  .home-grid { grid-template-columns: 1fr; }
+  .home-personas { flex-direction: column; }
 
   .hero h2 { font-size: 2rem; }
   .hero p { font-size: 1rem; }
@@ -1013,12 +1167,12 @@ body {
 }
 
 @media (max-width: 480px) {
-  .logo-sub { display: none; }
-  .nav-donate-btn { padding: 6px 12px; font-size: 0.8rem; }
-  .logo-text { font-size: 0.95rem; white-space: normal; }
+  .header-photo { width: 48px; height: 48px; }
+  .header-titles h1 { font-size: 1.1rem; }
+  .header-titles .header-sub { font-size: 0.75rem; }
+  .nav-donate-btn { padding: 6px 12px; font-size: 0.75rem; }
   .hero h2 { font-size: 1.6rem; }
   .hero { padding: 48px 0 40px; }
-  .header-inner { height: 64px; }
-  .nav-list { top: 64px; }
+  .nav-list { top: 100%; }
   .section-header h2 { font-size: 1.5rem; }
 }
