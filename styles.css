@@ -95,7 +95,13 @@ body {
 .header-titles {
   flex: 1;
   min-width: 0;
+  text-decoration: none;
+  color: inherit;
 }
+
+.header-titles h1 { color: var(--primary); }
+
+a.header-titles:hover h1 { color: var(--primary-light); }
 
 .header-titles h1 {
   font-size: 1.4rem;
