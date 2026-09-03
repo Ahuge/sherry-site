@@ -95,6 +95,8 @@ body {
 .header-titles {
   flex: 1;
   min-width: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 .header-titles h1 {
@@ -105,6 +107,8 @@ body {
   line-height: 1.2;
   margin: 0;
 }
+
+a.header-titles:hover h1 { color: var(--primary-light); }
 
 .header-titles .header-sub {
   font-size: 0.95rem;
