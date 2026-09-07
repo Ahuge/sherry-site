@@ -941,6 +941,18 @@ a.header-titles:hover h1 { color: var(--primary-light); }
   gap: var(--space-3);
 }
 
+.portal-group { margin-bottom: var(--space-6); }
+.portal-group:last-child { margin-bottom: 0; }
+.portal-group h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--border);
+}
+.portal-group p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 16px; }
+
 .question-btn {
   display: block;
   background: var(--bg-card);
