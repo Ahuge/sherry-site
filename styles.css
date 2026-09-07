@@ -353,6 +353,53 @@ a.header-titles:hover h1 { color: var(--primary-light); }
   font-weight: 600;
 }
 
+/* --- Idea CTA banner (home) --- */
+.idea-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  background: linear-gradient(135deg, rgba(244,162,97,0.14) 0%, rgba(10,37,64,0.04) 100%);
+  border: 1px solid var(--border);
+  border-left: 4px solid #c77d3a;
+  border-radius: var(--radius);
+  padding: var(--space-6);
+  margin-top: var(--space-6);
+  box-shadow: var(--shadow);
+}
+
+.idea-banner-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: rgba(244,162,97,0.15);
+  color: #c77d3a;
+}
+
+.idea-banner-body { flex: 1; min-width: 0; }
+
+.idea-banner-body h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 4px;
+  letter-spacing: -0.3px;
+}
+
+.idea-banner-body p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 640px;
+}
+
+.idea-banner-action { flex-shrink: 0; }
+.idea-banner-action .btn { text-align: center; }
+
 .resource-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1248,6 +1295,9 @@ a.footer-pill:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,
 
   .home-grid { grid-template-columns: 1fr; }
   .home-personas { flex-direction: column; }
+  .idea-banner { flex-direction: column; align-items: flex-start; }
+  .idea-banner-action { width: 100%; }
+  .idea-banner-action .btn { width: 100%; justify-content: center; }
 
   .hero h2 { font-size: 2rem; }
   .hero p { font-size: 1rem; }
