@@ -357,20 +357,20 @@ a.header-titles:hover h1 { color: var(--primary-light); }
 .idea-banner {
   display: flex;
   align-items: center;
-  gap: var(--space-4);
+  gap: var(--space-3);
   background: linear-gradient(135deg, rgba(244,162,97,0.14) 0%, rgba(10,37,64,0.04) 100%);
   border: 1px solid var(--border);
   border-left: 4px solid #c77d3a;
   border-radius: var(--radius);
-  padding: var(--space-4) var(--space-5);
-  margin-top: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  margin-top: var(--space-3);
   box-shadow: var(--shadow);
 }
 
 .idea-banner-icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -382,17 +382,17 @@ a.header-titles:hover h1 { color: var(--primary-light); }
 .idea-banner-body { flex: 1; min-width: 0; }
 
 .idea-banner-body h2 {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   color: var(--primary);
-  margin-bottom: 2px;
+  margin-bottom: 0;
   letter-spacing: -0.3px;
 }
 
 .idea-banner-body p {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--text-muted);
-  line-height: 1.5;
+  line-height: 1.45;
   margin: 0;
   max-width: 640px;
 }
@@ -1307,7 +1307,8 @@ a.footer-pill:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,
 
   .home-grid { grid-template-columns: 1fr; }
   .home-personas { flex-direction: column; }
-  .idea-banner { flex-direction: column; align-items: flex-start; }
+  .idea-banner { flex-direction: column; align-items: flex-start; gap: var(--space-3); }
+  .idea-banner-icon { display: none; }
   .idea-banner-action { width: 100%; }
   .idea-banner-action .btn { width: 100%; justify-content: center; white-space: normal; }
 
