@@ -893,6 +893,9 @@ a.header-titles:hover h1 { color: var(--primary-light); }
 .typeset p { margin-bottom: 16px; color: var(--text); font-size: 0.95rem; line-height: 1.65; }
 .typeset ul, .typeset ol { margin: 0 0 16px 20px; }
 .typeset li { margin-bottom: 8px; color: var(--text); font-size: 0.95rem; line-height: 1.65; }
+
+/* Anchor targets need clearance below the sticky header or the jump lands underneath it */
+#message-continued { scroll-margin-top: 130px; }
 .typeset strong { color: var(--primary); }
 
 .faq-list { margin-top: var(--space-5); }
